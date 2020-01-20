@@ -5,6 +5,12 @@ require 'pp'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
+  gross = 0
+  
+  for each in director_data do
+    gross += each[:worldwide_gross]
+  end
+  
   pp director_data
 end
 
@@ -18,10 +24,6 @@ def directors_totals(nds)
   for each in nds do
     dir_name = each[:name]
     gross = gross_for_director(each[:movies])
-    
-    for movies in each[:movies] do
-      gross += movies[:worldwide_gross]
-    end
     
     result[dir_name] = gross
   end
