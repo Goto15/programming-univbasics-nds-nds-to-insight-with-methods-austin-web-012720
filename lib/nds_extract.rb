@@ -14,7 +14,12 @@ end
 def directors_totals(nds)
   result = {}
   
-  dir_name = each[:name]
+  nil
+end
+
+
+for each in nds do
+    dir_name = each[:name]
     gross = 0
     
     for movies in each[:movies] do
@@ -25,10 +30,3 @@ def directors_totals(nds)
   end
   
   return result
-  
-  nil
-end
-
-
-for each in nds do
-    
