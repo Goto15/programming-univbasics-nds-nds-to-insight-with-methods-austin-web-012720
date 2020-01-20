@@ -8,7 +8,7 @@ def gross_for_director(director_data)
   gross = 0
   
   for each in director_data do
-    gross += each[:worldwide_gross]
+    gross += each[:worldwide_gross]to_i
   end
   
   return gross
