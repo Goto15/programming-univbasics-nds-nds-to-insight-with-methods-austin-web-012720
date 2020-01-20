@@ -14,11 +14,7 @@ end
 def directors_totals(nds)
   result = {}
   
-  nil
-end
-
-
-for each in nds do
+  for each in nds do
     dir_name = each[:name]
     gross = 0
     
@@ -30,3 +26,6 @@ for each in nds do
   end
   
   return result
+  nil
+end
+
