@@ -11,7 +11,7 @@ def gross_for_director(director_data)
     gross += each[:worldwide_gross]
   end
   
-  pp director_data
+  return gross
 end
 
 # Write a method that, given an NDS creates a new Hash
